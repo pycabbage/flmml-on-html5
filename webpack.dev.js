@@ -1,12 +1,15 @@
-const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
 
-module.exports = merge(common, {
-    mode: "development",
-    devtool: "inline-source-map",
-    devServer: {
-        contentBase: __dirname,
-        publicPath: "/dist",
-        injectClient: false
+/** @type {import('webpack').Configuration} */
+module.exports = {
+    ...common,
+    ...{
+        mode: "development",
+        devtool: "inline-source-map",
+        devServer: {
+            contentBase: __dirname,
+            publicPath: "/dist",
+            injectClient: false
+        }
     }
-});
+};

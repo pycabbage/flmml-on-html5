@@ -1,14 +1,14 @@
 {
-    "compilerOptions": {
-        "target": "ES6",
-        "module": "amd",
-        "sourceMap": true,
-        "declaration": true,
-        "outDir": "./dist",
-        "lib": [
-            "DOM",
-            "WebWorker"
-        ],
-        "newLine": "lf"
-    }
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "amd",
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "lib": [
+      "DOM",
+      "WebWorker"
+    ],
+    "newLine": "lf"
+  }
 }

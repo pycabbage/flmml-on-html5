@@ -9,7 +9,6 @@
     "homepage": "https://github.com/argentum384/flmml-on-html5",
     "author": "argentum384",
     "license": "BSD-3-Clause",
-    "private": false,
     "scripts": {
         "gen-worklet-script": "node ./bin/generate_worklet_script.js",
         "start-alone": "webpack serve --open --config webpack.dev.js",
@@ -19,15 +18,16 @@
         "build": "run-s \"gen-worklet-script --prod\" clean build-alone"
     },
     "devDependencies": {
+        "@types/node": "^18.15.6",
         "npm-run-all": "^4.1.5",
-        "rimraf": "^3.0.2",
-        "terser": "^5.7.2",
-        "ts-loader": "^9.2.5",
-        "typescript": "^4.3.5",
-        "webpack": "^5.50.0",
-        "webpack-cli": "^4.8.0",
-        "webpack-dev-server": "^3.11.2",
-        "webpack-merge": "^5.8.0"
+        "rimraf": "^4.4.1",
+        "terser": "^5.16.6",
+        "terser-webpack-plugin": "^5.3.7",
+        "ts-loader": "^9.4.2",
+        "typescript": "^5.0.2",
+        "webpack": "^5.76.3",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.13.1"
     },
-    "dependencies": {}
+    "packageManager": "yarn@3.5.0"
 }
